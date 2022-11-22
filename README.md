@@ -1,7 +1,6 @@
 ### Bikeshare Data-extracter
 
-### Date created
-Include the date you created this project and README file.
+### 23rd November 2022
 
 ### Description
 Describe what your project is about and what it does
