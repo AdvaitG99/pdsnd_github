@@ -18,7 +18,7 @@ def get_filters():
     """
 
     months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
-    days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
+    days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun', 'all']
 
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
@@ -43,11 +43,11 @@ def get_filters():
     # get user filter for day or both(Month and day)
     if filter_input == 'day' or filter_input == 'both':
         day = input(
-            "Which day would you like to choose? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or all? Please type the full name of the day.\n").lower()
+            "Which day would you like to choose? mon = Monday, tue = Tuesday, wed = Wednesday, thu = Thursday, fri = Friday, sat = Saturday, sun = Sunday or all?\n").lower()
         while day not in days:
             print("Please enter correct day or type 'all'.")
             day = input(
-                "Which day would you like to choose? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or all? Please type the full name of the day.\n").lower()
+                "Which day would you like to choose? mon = Monday, tue = Tuesday, wed = Wednesday, thu = Thursday, fri = Friday, sat = Saturday, sun = Sunday or all?\n").lower()
     else:
         day = 'all'
     # code for handling incorrect user input
